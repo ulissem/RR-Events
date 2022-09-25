@@ -1,0 +1,66 @@
+/* General CSS for the table */
+.RRScript{
+    margin:0% 5% 3% 5%;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+
+/* Table header Styling */
+thead{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    font-weight:400;
+}
+
+/* Search Box */
+.RRPublish > div.ListControl > div.ListControlSearch > input{
+    font-family: 'Orbitron';
+    font-size: 0.8em !important;
+    font-weight:400;
+}
+
+/* Search Button */
+.RRPublish > div.ListControl > div.ListControlSearch > button.btnSearch:disabled{
+    font-family: 'Orbitron';
+}
+
+/* Live Update text */
+.RRPublish div.ListControl{
+    font-family: 'Orbitron';
+}
+
+/* Lines alternatevily colored */
+#tb_1_1Data tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+/* Space every row */
+#tb_1_1Data td, #tb_1_1Data th {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+/* Details Table font */
+td{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+}
+
+/* Details Table Titles */
+table.divDetailsParent div.divDetailsInner {
+    font-family: 'Orbitron';
+}
+
+/* Hover on table */
+#tb_1_1Data tr:hover {
+    background-color: rgb(52, 51, 51);
+    color: white;
+}
+
+/* H1 Styling */
+h1{
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+}

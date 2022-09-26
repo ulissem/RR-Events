@@ -7,66 +7,57 @@
     <!--Fonts from Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">    
-    <!-- Styling with External CSS -->  
-    <link rel="stylesheet" href="styles.css">
-    <title>Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<!-- Styling with External CSS -->
+	<link rel="stylesheet" href="styles.css"/>
+  	<title>Events</title>
+
 </head>
-<body>
-    <h1>Events</h1>
 
-<div id="tableEvents">
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>LOGO</th>
-                <th>NAME</th>
-                <th>DATE</th>
-                <th>NATION</th>
-                <th>Live</th>
-                <th>Results</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="active-row">
-                <td><img src="https://my.raceresult.com/220217/elements/picture.php?eventid=220217&name=HardEnduro_Orizzontal.png"></td>
-                <td>FIM Hard Enduro World Championship</td>
-                <td>06.Oct.2022</td>
-                <td>Spain</td>
-                <td><a href="FIM Hard Enduro/220217_LivePage.html">Live</a></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><img src="https://my.raceresult.com/219932/elements/picture.php?eventid=219932&name=pirelli.png"></td>
-                <td>Pirelli Test with GT Car</td>
-                <td>02.Nov.2022</td>
-                <td>Italy</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><img src="https://my.raceresult.com/214896/elements/picture.php?eventid=214896&name=Nandu.png"></td>
-                <td>Buenos Aires Half Marathon</td>
-                <td>21.Aug.2022</td>
-                <td>Argentina</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <!-- <tr>
-                <td><img src=""></td>
-                <td>NAME</td>
-                <td>DATE</td>
-                <td>LOCATION</td>
-                <td></td>
-                <td></td>
-            </tr> -->
-            <!-- and so on... -->
+<h1>Events</h1>
 
-        </tbody>
-    </table>
-</div>
-<div>
-    <img src="https://my2.raceresult.com/RRPublish/graphics/RR_PoweredBy_LightGrey_RGB.png" alt="" id="LogoRR">
-</div>
+   <table class="table-resposive">
+     <thead>
+     	<tr>
+     	 <th>LOGO</th>
+     	 <th>NAME</th>
+     	 <th>DATE</th>
+     	 <th>NATION</th>
+     	 <th>LIVE</th>
+		 <th>RESULTS</th>
+     	</tr>
+     </thead>
+     <tbody>
+		 
+		 <tr>
+			 <td data-label=""><img src="https://my.raceresult.com/219932/elements/picture.php?eventid=219932&name=pirelli.png"></td>
+			 <td data-label="NAME">Pirelli Test</td>
+			 <td data-label="DATE">02.Nov.2022</td>
+			 <td data-label="NATION">Italy</td>
+			 <td data-label="LIVE">-</td>
+			 <td data-label="RESULTS">-</td>
+			</tr>
+
+		<tr class="active-row">
+			<td data-label=""><img src="https://my.raceresult.com/220217/elements/picture.php?eventid=220217&name=HardEnduro_Orizzontal.png"></td>
+			<td data-label="NAME">FIM Hard Enduro World Championship</td>
+			<td data-label="DATE">06.Oct.2022</td>
+			<td data-label="NATION">Spain</td>
+			<td data-label="LIVE"><a href="FIM Hard Enduro/220217_LivePage.html">Live</a></td>
+			<td data-label="RESULTS">-</td>
+			</tr>
+
+		<tr>
+			<td data-label=""><img src="https://my.raceresult.com/214896/elements/picture.php?eventid=214896&name=Nandu.png"></td>
+			<td data-label="NAME">Buenos Aires Half-Marathon</td>
+			<td data-label="DATE">21.Aug.2022</td>
+			<td data-label="NATION">Argentina</td>
+			<td data-label="LIVE">-</td>
+			<td data-label="RESULTS">-</td>
+		</tr>
+
+     </tbody>
+   </table>
+
 </body>
 </html>

@@ -1,6 +1,11 @@
 body{
 	padding:20px;
 	font-family: sans-serif;
+	min-height: 100vh;
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1{
@@ -22,10 +27,15 @@ h1{
 	font-size: 0.9em;
 	font-family: sans-serif;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-radius: 25px;
+	overflow: hidden;
+	background: white;
   }
   
   .table-resposive thead tr {
-	background-color: #009879;
+	background-color: #009879; 
+	background: #36304a;
+	height: 60px;
 	color: #ffffff;
 	text-align: center;
   }
@@ -44,10 +54,10 @@ h1{
   .table-resposive tbody tr:nth-of-type(even) {
 	background-color: #f3f3f3;
   }
-  
-  .table-resposive tbody tr:last-of-type {
+  /* Last line green */
+  /* .table-resposive tbody tr:last-of-type {
 	border-bottom: 2px solid #009879;
-  }
+  } */
   
   .table-resposive tbody tr.active-row {
 	font-weight: bold;

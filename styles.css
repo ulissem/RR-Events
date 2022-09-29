@@ -14,6 +14,7 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+	margin-top: 10px;
 }
 
 *{
@@ -155,13 +156,17 @@ img {
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content/Box */
+  /* Modal Content Box */
   .modal-content {
 	background-color: #fefefe;
 	margin: 15% auto; /* 15% from the top and centered */
-	padding: 20px;
+	padding: 15px;
+	z-index: 2;
 	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 95%; /* Could be more or less, depending on screen size */
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border-radius: 25px;
   }
   
   /* The Close Button */
@@ -185,6 +190,13 @@ img {
 	right: 5%;
 	border-width: 0px;
 	background-color: #00987a00;
+  }
+
+  iframe {
+	width="100%";
+	height="600";
+	border:none;
+	border-radius: 25px;
   }
 
 /*responsive*/

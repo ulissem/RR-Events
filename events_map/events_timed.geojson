@@ -1,0 +1,1617 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "place_name": "Modena, Modena, Italy",
+        "sport": "Road Cycling",
+        "tappa": 10,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          10.93278,
+          44.644423
+        ],
+        "type": "Point"
+      },
+      "id": "08e0f8ffea5b3179f24b6ac10c800bc8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Campionati Italiani Indoor Juniores",
+        "job": "Main Timer",
+        "place_name": "Palaindoor Ancona",
+        "sport": "Track & Field",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          13.516411,
+          43.614776
+        ],
+        "type": "Point"
+      },
+      "id": "0d59e9472a0b7be126060c203151a72b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "San Marino",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 9,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.447557,
+          43.939722
+        ],
+        "type": "Point"
+      },
+      "id": "1dd11d4648e41bbe6c722814c8a064a8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Camel Competition",
+        "job": "Main Timer",
+        "place_name": "Sharjah, UAE",
+        "sport": "Camel race",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          55.390957,
+          25.355301
+        ],
+        "type": "Point"
+      },
+      "id": "62a723e4136ece6eb40ccedcd8a3de2f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Pesaro, Italy",
+        "job": "Main Timer",
+        "event": "Giro d'Italia",
+        "sport": "Road Cycling",
+        "tappa": 8,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.918616,
+          43.908326
+        ],
+        "type": "Point"
+      },
+      "id": "64313571872d8c4af91a007b66bacafd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Hatta Dam, UAE",
+        "event": "UAE Tour",
+        "sport": "Road Cycling",
+        "year": 2020,
+        "job": "Main Timer"
+      },
+      "geometry": {
+        "coordinates": [
+          56.113543,
+          24.785022
+        ],
+        "type": "Point"
+      },
+      "id": "6bdb44b52c666e51b062ac58a0b81d90"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Al Dhafra, UAE",
+        "event": "Falcon Competition",
+        "year": 2018,
+        "sport": "Falconery",
+        "job": "Main Timer"
+      },
+      "geometry": {
+        "coordinates": [
+          53.793378,
+          23.541221
+        ],
+        "type": "Point"
+      },
+      "id": "71d1e61072bbe5627c9b773ef2f99a8f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Dubai Silicon Oasis, UAE",
+        "event": "UAE Tour",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          55.387651,
+          25.119521
+        ],
+        "type": "Point"
+      },
+      "id": "89f3a1c62919c5c75beb0ce094b740bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Etna",
+        "event": "Giro di Sicilia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          14.993829,
+          37.751028
+        ],
+        "type": "Point"
+      },
+      "id": "98c23b8b3e2e35c8cf23d3b33fa6729b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Sarnen, Obwalden, Switzerland",
+        "event": "Switzerland Marathon Light",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          8.246063,
+          46.894734
+        ],
+        "type": "Point"
+      },
+      "id": "a8cb77f77904c5110dcb62cc9caa73fb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Buenos Aires Half Marathon",
+        "place_name": "Buenos Aires, Argentina",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -58.381596,
+          -34.594067
+        ],
+        "type": "Point"
+      },
+      "id": "a9f376c48db041bece6295d115216c52"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Monte Avena, Belluno, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 20,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          11.748968,
+          46.051743
+        ],
+        "type": "Point"
+      },
+      "id": "address.8907968221277546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Dubai City Walk",
+        "event": "UAE Tour",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          55.261108,
+          25.209751
+        ],
+        "type": "Point"
+      },
+      "id": "beaab7ba021eecb4289bd9c92e6ec993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Jebel Hafeet, UAE",
+        "event": "UAE Tour",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          55.777879,
+          24.059125
+        ],
+        "type": "Point"
+      },
+      "id": "cfd45b559340effb2ce178bd2af96569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q238",
+        "place_name": "San Marino",
+        "event": "XVII Giochi dei Piccoli Stati d’Europa",
+        "sport": "Track & Field",
+        "job": "Main Timer",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          12.446042,
+          43.941707
+        ],
+        "type": "Point"
+      },
+      "id": "country.1945585793143240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Campionati Italiani Master Indoor",
+        "year": 2016,
+        "sport": "Track & Field",
+        "place_name": "Palaindoor Ancona",
+        "job": "Main Timer"
+      },
+      "geometry": {
+        "coordinates": [
+          13.513664,
+          43.616765
+        ],
+        "type": "Point"
+      },
+      "id": "d494b343542264a061b6d2c715763377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Palermo, Palermo, Italy",
+        "event": "Giro di Sicilia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          13.350383,
+          38.114738
+        ],
+        "type": "Point"
+      },
+      "id": "d655995e4fa9cb4520dcff8baf0f785a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Shooting Competition",
+        "job": "Scoring Operator",
+        "sport": "Shooting",
+        "year": 2018,
+        "place_name": "Dubai, Dubai, United Arab Emirates"
+      },
+      "geometry": {
+        "coordinates": [
+          55.263241,
+          25.164036
+        ],
+        "type": "Point"
+      },
+      "id": "d87be840474b5a028a55647bd0cf915b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "On-Site Training",
+        "job": "On-Site Support ",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -58.381596,
+          -34.603676
+        ],
+        "type": "Point"
+      },
+      "id": "da2c46e8e033d7969ae96588e2e4a319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Saluki Competition",
+        "job": "Main Timer",
+        "place_name": "Dubai, Dubai, United Arab Emirates",
+        "sport": "Dog Race",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          55.319545,
+          25.291993
+        ],
+        "type": "Point"
+      },
+      "id": "ddcf57ae5106b6b068233e81663f336a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "La Santa, Lanzarote",
+        "event": "Running Challenge",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -13.665125,
+          29.10799
+        ],
+        "type": "Point"
+      },
+      "id": "dfb8a5514951e84e6356ebd3f2b2125d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Abu Dhabi, Abu Dhabi, United Arab Emirates",
+        "event": "World Triathlon Championship Series",
+        "sport": "Triathlon",
+        "job": "On-Site Support ",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          54.329251,
+          24.459454
+        ],
+        "type": "Point"
+      },
+      "id": "e5896e013ac7048c7cda5e0c8bf00a52"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Anterselva di Sotto, Rasun-Anterselva, South Tyrol, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 17,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.087834,
+          46.831057
+        ],
+        "type": "Point"
+      },
+      "id": "locality.17656432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Piediluco, Terni, Terni, Italy",
+        "event": "Memorial d'Aloja",
+        "year": 2017,
+        "job": "Main Timer",
+        "sport": "Rowing"
+      },
+      "geometry": {
+        "coordinates": [
+          12.75471,
+          42.535856
+        ],
+        "type": "Point"
+      },
+      "id": "locality.382700144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "San Martino di Castrozza, Primiero San Martino di Castrozza, Trentino, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 19,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          11.802828,
+          46.262338
+        ],
+        "type": "Point"
+      },
+      "id": "locality.455060080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "TH-10",
+        "wikidata": "Q1861",
+        "place_name": "Bangkok, Thailand",
+        "event": "Bangsaen 42",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          100.51667,
+          13.75
+        ],
+        "type": "Point"
+      },
+      "id": "place.10003600116527470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "TR-34",
+        "wikidata": "Q406",
+        "place_name": "Istanbul, Turkey",
+        "event": "On-Site Training",
+        "job": "On-Site Support ",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          28.96028,
+          41.01
+        ],
+        "type": "Point"
+      },
+      "id": "place.10051135761440000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q3718",
+        "place_name": "Dakar, Dakar, Senegal",
+        "event": "Meeting IAAF",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -17.457171,
+          14.712019
+        ],
+        "type": "Point"
+      },
+      "id": "place.10448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1906",
+        "place_name": "Caserta, Caserta, Italy",
+        "event": "Universiadi",
+        "job": "Main Timer",
+        "sport": "Football",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          14.334708,
+          41.082083
+        ],
+        "type": "Point"
+      },
+      "id": "place.12380272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "AR-C",
+        "wikidata": "Q1486",
+        "place_name": "Buenos Aires, Argentina",
+        "event": "Buenos Aires Marathon",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -58.38194,
+          -34.59972
+        ],
+        "type": "Point"
+      },
+      "id": "place.12924400639524870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q680743",
+        "place_name": "Balatonfüred, Veszprém, Hungary",
+        "event": "FINA Open Water",
+        "year": 2019,
+        "job": "Main Timer",
+        "sport": "Open Water"
+      },
+      "geometry": {
+        "coordinates": [
+          17.888892,
+          46.956725
+        ],
+        "type": "Point"
+      },
+      "id": "place.1443942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q9245",
+        "place_name": "Ceresole Reale, Turin, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 13,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          7.235706,
+          45.431952
+        ],
+        "type": "Point"
+      },
+      "id": "place.15755376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q518339",
+        "place_name": "Cazorla, Jaén, Spain",
+        "event": "Bosques del Sur",
+        "year": 2022,
+        "job": "On-Site Support ",
+        "sport": "Trailrun"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.003887,
+          37.912893
+        ],
+        "type": "Point"
+      },
+      "id": "place.16205894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q13146",
+        "place_name": "Civitanova Marche, Macerata, Italy",
+        "event": "42^ Stracivitanova",
+        "job": "Main Timer",
+        "sport": "Running",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          13.72293,
+          43.305523
+        ],
+        "type": "Point"
+      },
+      "id": "place.17483888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1519",
+        "place_name": "Abu Dhabi, Abu Dhabi, United Arab Emirates",
+        "event": "Camel Competition",
+        "job": "Main Timer",
+        "sport": "Camel race",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          54.3706,
+          24.4748
+        ],
+        "type": "Point"
+      },
+      "id": "place.18435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1308",
+        "place_name": "Como, Como, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 15,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          9.083035,
+          45.811562
+        ],
+        "type": "Point"
+      },
+      "id": "place.18466928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q3415",
+        "place_name": "Ancona, Ancona, Italy",
+        "event": "Campionati Italiani Assoluti Indoor",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          13.517098,
+          43.617014
+        ],
+        "type": "Point"
+      },
+      "id": "place.1861744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q34993",
+        "place_name": "Courmayeur, Aosta Valley, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 14,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          6.973062,
+          45.787425
+        ],
+        "type": "Point"
+      },
+      "id": "place.19622000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q168888",
+        "place_name": "Maceió, Alagoas, Brazil",
+        "event": "Ironman 70.3",
+        "job": "On-Site Support ",
+        "sport": "Triathlon",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -35.7339,
+          -9.6477
+        ],
+        "type": "Point"
+      },
+      "id": "place.23291936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q190963",
+        "place_name": "Frascati, Rome, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 4,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.680368,
+          41.808245
+        ],
+        "type": "Point"
+      },
+      "id": "place.23537776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q82699",
+        "place_name": "Fucecchio, Florence, Italy",
+        "event": "Giro d'Italia",
+        "tappa": 2,
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          10.808205,
+          43.729202
+        ],
+        "type": "Point"
+      },
+      "id": "place.23808112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q63964",
+        "place_name": "Sarnen, Obwalden, Switzerland",
+        "event": "Switzerland Marathon Light",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          8.246149,
+          46.895673
+        ],
+        "type": "Point"
+      },
+      "id": "place.24561708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1449",
+        "place_name": "Genova, Genoa, Italy",
+        "event": "European Para Youth Games",
+        "sport": "Swimming",
+        "job": "Main Timer",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          8.933862,
+          44.40726
+        ],
+        "type": "Point"
+      },
+      "id": "place.24823920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q50195",
+        "place_name": "Imola, Bologna, Italy",
+        "event": "On-Site Training",
+        "job": "On-Site Support ",
+        "sport": "Cycling",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          11.714123,
+          44.353515
+        ],
+        "type": "Point"
+      },
+      "id": "place.26847344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q3476",
+        "place_name": "L'Aquila, L'Aquila, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 7,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          13.397967,
+          42.34892
+        ],
+        "type": "Point"
+      },
+      "id": "place.27887728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q72",
+        "place_name": "Zürich, Zürich, Switzerland",
+        "event": "Gigathlon",
+        "job": "On-Site Support ",
+        "sport": "Triathlon",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          8.541042,
+          47.374449
+        ],
+        "type": "Point"
+      },
+      "id": "place.31950892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q487929",
+        "place_name": "Milazzo, Messina, Italy",
+        "event": "Giro di Sicilia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          15.241513,
+          38.220805
+        ],
+        "type": "Point"
+      },
+      "id": "place.32663664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1085",
+        "place_name": "Praha, Prague, Czech Republic",
+        "event": "RACE RESULT Training",
+        "job": "On-Site Support ",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          14.421253,
+          50.087465
+        ],
+        "type": "Point"
+      },
+      "id": "place.32827449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q279",
+        "place_name": "Modena, Modena, Italy",
+        "event": "Finale ORO",
+        "job": "False Start System",
+        "sport": "Track & Field",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          10.925571,
+          44.645889
+        ],
+        "type": "Point"
+      },
+      "id": "place.32974960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q192517",
+        "place_name": "Boulder, Colorado, United States",
+        "event": "MTB Colorado",
+        "job": "On-Site Support ",
+        "sport": "MTB",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -105.270545,
+          40.014986
+        ],
+        "type": "Point"
+      },
+      "id": "place.34064620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q160320",
+        "place_name": "Addammam, Eastern, Saudi Arabia",
+        "event": "On-Site Training",
+        "job": "On-Site Support ",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          50.0982,
+          26.4344
+        ],
+        "type": "Point"
+      },
+      "id": "place.35012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q101269",
+        "place_name": "Nembro, Bergamo, Italy",
+        "event": "Assoluti FISPES",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          9.759275,
+          45.743974
+        ],
+        "type": "Point"
+      },
+      "id": "place.36849776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q612",
+        "place_name": "Dubai, Dubai, United Arab Emirates",
+        "event": "Falcon Competition",
+        "job": "Main Timer",
+        "year": 2019,
+        "sport": "Falconery"
+      },
+      "geometry": {
+        "coordinates": [
+          55.2962,
+          25.2684
+        ],
+        "type": "Point"
+      },
+      "id": "place.370691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q16337",
+        "place_name": "Novi Ligure, Alessandria, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 11,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          8.789551,
+          44.76085
+        ],
+        "type": "Point"
+      },
+      "id": "place.37537904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q214849",
+        "place_name": "Orbetello, Grosseto, Italy",
+        "event": "Giro d'Italia",
+        "tappa": 3,
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          11.210743,
+          42.438094
+        ],
+        "type": "Point"
+      },
+      "id": "place.38299760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q124554",
+        "place_name": "Osimo, Ancona, Italy",
+        "event": "IX Meeting - Trofeo Città di Osimo",
+        "job": "Main Timer",
+        "year": 2016,
+        "sport": "Swimming"
+      },
+      "geometry": {
+        "coordinates": [
+          13.482407,
+          43.486136
+        ],
+        "type": "Point"
+      },
+      "id": "place.38766704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q617",
+        "place_name": "Padova, Padua, Italy",
+        "event": "Meeting MONDIALE",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          11.873445,
+          45.407717
+        ],
+        "type": "Point"
+      },
+      "id": "place.39233648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q2656",
+        "place_name": "Palermo, Palermo, Italy",
+        "event": "Studenteschi",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          13.352443,
+          38.111227
+        ],
+        "type": "Point"
+      },
+      "id": "place.39561328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q13134",
+        "place_name": "Pesaro, Pesaro and Urbino, Italy",
+        "event": "Campionati Italiani Indoor",
+        "job": "Main Timer",
+        "sport": "Indoor Skating",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          12.913123,
+          43.909811
+        ],
+        "type": "Point"
+      },
+      "id": "place.40814704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q9573",
+        "place_name": "Pinerolo, Turin, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 12,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          7.331945,
+          44.887309
+        ],
+        "type": "Point"
+      },
+      "id": "place.42100848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q111429",
+        "place_name": "Ponte di Legno, Brescia, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 16,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          10.508662,
+          46.258603
+        ],
+        "type": "Point"
+      },
+      "id": "place.43239536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q13674",
+        "place_name": "Ragusa, Ragusa, Italy",
+        "event": "Giro di Sicilia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          14.721345,
+          36.921983
+        ],
+        "type": "Point"
+      },
+      "id": "place.45181040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q111888",
+        "place_name": "Riccione, Rimini, Italy",
+        "event": "Life Saving European Championship",
+        "job": "Scoring Operator",
+        "sport": "Swimming",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.647437,
+          43.998274
+        ],
+        "type": "Point"
+      },
+      "id": "place.45803632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q13396",
+        "place_name": "Rieti, Rieti, Italy",
+        "event": "Campionati Italiani Allievi",
+        "year": 2018,
+        "job": "False Start System",
+        "sport": "Track & Field"
+      },
+      "geometry": {
+        "coordinates": [
+          12.862999,
+          42.401691
+        ],
+        "type": "Point"
+      },
+      "id": "place.45852784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1335",
+        "place_name": "Montevideo, Montevideo, Uruguay",
+        "event": "On-Site Training",
+        "job": "On-Site Support ",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -56.19131,
+          -34.905892
+        ],
+        "type": "Point"
+      },
+      "id": "place.469229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q220",
+        "place_name": "Roma, Rome, Italy",
+        "event": "Campionati Italiani Nuoto",
+        "job": "Graphic Operator",
+        "sport": "Swimming",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.482932,
+          41.89332
+        ],
+        "type": "Point"
+      },
+      "id": "place.47384688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q279373",
+        "place_name": "Rovereto, Trentino, Italy",
+        "event": "Campionati Nazionali CSI",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          11.045237,
+          45.886548
+        ],
+        "type": "Point"
+      },
+      "id": "place.47990896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q51951",
+        "place_name": "San Giovanni Rotondo, Foggia, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 6,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          15.728845,
+          41.706911
+        ],
+        "type": "Point"
+      },
+      "id": "place.50038896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q844430",
+        "place_name": "Phuket, Phuket, Thailand",
+        "event": "Oceanman",
+        "job": "On-Site Support ",
+        "sport": "Open Water",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          98.3975,
+          7.88806
+        ],
+        "type": "Point"
+      },
+      "id": "place.5048541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q35997",
+        "place_name": "Izmir, Izmir, Turkey",
+        "event": "Izmir Half Marathon",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          27.143412,
+          38.414733
+        ],
+        "type": "Point"
+      },
+      "id": "place.5122276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desciption": "European Master Athletics Championships Stadia",
+        "place_name": "Aarhus, Central Denmark Region, Denmark",
+        "job": "Main Timer",
+        "sport": "Track & Field",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          10.213405,
+          56.149628
+        ],
+        "type": "Point"
+      },
+      "id": "place.51261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q46973",
+        "place_name": "Santa Maria di Sala, Venice, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 18,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.033868,
+          45.505036
+        ],
+        "type": "Point"
+      },
+      "id": "place.51988592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q128226",
+        "place_name": "Terracina, Latina, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 5,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          13.249201,
+          41.28712
+        ],
+        "type": "Point"
+      },
+      "id": "place.57722992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q80544",
+        "place_name": "Agropoli, Salerno, Italy",
+        "event": "Campionati Italiani Indoor Juniores",
+        "job": "False Start System",
+        "sport": "Track & Field",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          14.996553,
+          40.346905
+        ],
+        "type": "Point"
+      },
+      "id": "place.600176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1891",
+        "place_name": "Bologna, Bologna, Italy",
+        "event": "Giro d'Italia",
+        "tappa": 1,
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          11.342633,
+          44.49382
+        ],
+        "type": "Point"
+      },
+      "id": "place.6056048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q2028",
+        "place_name": "Verona, Verona, Italy",
+        "event": "Giro d'Italia",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "tappa": 21,
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          10.992412,
+          45.438496
+        ],
+        "type": "Point"
+      },
+      "id": "place.62146672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q2280",
+        "place_name": "Минск, Minsk, Belarus",
+        "event": "European Games",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          27.560466,
+          53.90419
+        ],
+        "type": "Point"
+      },
+      "id": "place.624677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q41753",
+        "place_name": "Klagenfurt am Wörthersee, Carinthia, Austria",
+        "event": "Ironman",
+        "job": "On-Site Support ",
+        "sport": "Triathlon",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          14.306886,
+          46.623387
+        ],
+        "type": "Point"
+      },
+      "id": "place.6686733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q84",
+        "place_name": "London, Greater London, England, United Kingdom",
+        "event": "London Marathon",
+        "job": "On-Site Support ",
+        "sport": "Running",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -0.127647,
+          51.507322
+        ],
+        "type": "Point"
+      },
+      "id": "place.6957135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q81817",
+        "place_name": "Schonach im Schwarzwald, Baden-Württemberg, Germany",
+        "event": "Rucksacklauf",
+        "job": "On-Site Support ",
+        "sport": "Ski-Cross",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          8.197494,
+          48.142715
+        ],
+        "type": "Point"
+      },
+      "id": "place.70780986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q398349",
+        "place_name": "Aguilar de Campoo, Palencia, Spain",
+        "event": "FIM Hard Enduro Championship",
+        "job": "On-Site Support ",
+        "sport": "Enduro",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -4.260544,
+          42.792837
+        ],
+        "type": "Point"
+      },
+      "id": "place.747590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "AZ-BA",
+        "wikidata": "Q9248",
+        "place_name": "Baku, Azerbaijan",
+        "event": "European Youth Olympics Festival",
+        "job": "Main Timer",
+        "sport": "Road Cycling",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          49.83518,
+          40.36666
+        ],
+        "type": "Point"
+      },
+      "id": "place.9911396469448180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "TW-TPE",
+        "wikidata": "Q1867",
+        "place_name": "Taipei, Taiwan",
+        "event": "FINA Open Water",
+        "job": "Main Timer",
+        "year": 2019,
+        "sport": "Open Water"
+      },
+      "geometry": {
+        "coordinates": [
+          121.63333,
+          25.03333
+        ],
+        "type": "Point"
+      },
+      "id": "region.10031698858390370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "SA-01",
+        "wikidata": "Q1249255",
+        "place_name": "Riyadh, Saudi Arabia",
+        "event": "Falcon Fair",
+        "job": "Main Timer",
+        "sport": "Falconery",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          46.741455,
+          24.62906
+        ],
+        "type": "Point"
+      },
+      "id": "region.10106800163659000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "AD-07",
+        "wikidata": "Q2522163",
+        "place_name": "Andorra la Vella, Andorra",
+        "event": "MTB Andorra Classic",
+        "job": "On-Site Support ",
+        "sport": "MTB",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          1.5,
+          42.5
+        ],
+        "type": "Point"
+      },
+      "id": "region.9259398907847630"
+    }
+  ],
+  "type": "FeatureCollection"
+}

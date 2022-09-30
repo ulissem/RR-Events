@@ -65,6 +65,11 @@ h1{
 	color: #009879;
   }
 
+  #map-description {
+	text-align: center;
+	font-style: italic;
+  }
+
 /* .table-resposive{
 	width: 100%;
 	border-collapse: collapse;

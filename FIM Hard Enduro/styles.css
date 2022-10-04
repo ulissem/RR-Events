@@ -65,11 +65,42 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-family: 'Orbitron';
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#first {
+    margin-top: 150px;
+}
+
 #HomePage{
     color: rgb(52, 51, 51);
     font-family: 'Orbitron';
     font-weight: 700;
-    margin: 5% 0 0 5%;
+    margin: 2% 0 0 5%;
+    display: inline-block;
+}
+
+#back{
+    color: rgb(52, 51, 51);
+    font-family: 'Orbitron';
+    font-weight: 700;
+    margin: 2% 0 0 5%;
+    display: inline-block;
+}
+
+body{
+	padding: 10px 20px 0px 20px;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #f6f5f3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #f6f5f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Link */
@@ -86,7 +117,7 @@ a:link {
   }
   
   a:hover {
-    color: yellow;
+    color: rgb(190, 190, 5);
     background-color: transparent;
     text-decoration: underline;
   }
@@ -95,4 +126,9 @@ a:link {
     color: rgb(52, 51, 51);
     background-color: transparent;
     text-decoration: underline;
+  }
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
   }

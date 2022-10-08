@@ -14,13 +14,33 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Title Page -->
-    <title>Results</title>
+    <title>Final</title>
 
 </head>
 <body>
     <p id="HomePage"><a href="../Index.html">< All Events</a></p>
-    <h1>Results</h1>
-    <h2><a href="/FIM Hard Enduro/Final.html#0_8AF0E5">> Final <</a></h2>
-    <h2 id="first"><a href="/FIM Hard Enduro/General.html#0_890111">> Detail List <</a></h2>
-    <h2><a href="/FIM Hard Enduro/Final.html#0_8AF0E5#0_8C0A0C">> Last Seen <</a></h2>
+    <p id="back"><a href="/FIM Hard Enduro/Results.html">< Back</a></p>
+    <h1>Last Seen</h1>
+
+    <div id="divRRPublish" class="RRPublish"></div>
+    <script type="text/javascript" src="https://my.raceresult.com/RRPublish/load.js.php?lang=en"></script>
+    <script type="text/javascript">
+	var rrp=new RRPublish(document.getElementById("divRRPublish"), 220217, "results");
+	rrp.ShowTimerLogo=true;
+	rrp.ShowInfoText=false;
+</script>
+<style>
+
+div.RRPublish {
+    width: 95%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  div.Selector div:first-child{
+    display: none !important;
+  }
+</style>
+    
 </body>
+</html>

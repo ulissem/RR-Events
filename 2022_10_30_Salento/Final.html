@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+
+    <!--Fonts from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Styling with External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Title Page -->
+    <title>Risultati</title>
+    <link rel="icon" href="/Icon/stopwatch.png">
+
+</head>
+<body>
+    <p id="HomePage"><a href="../Index.html">< All Events</a></p>
+    <h1>Risultati</h1>
+
+    <div id="divRRPublish" class="RRPublish"></div>
+    <script type="text/javascript" src="https://my.raceresult.com/RRPublish/load.js.php?lang=it"></script>
+    <script type="text/javascript">
+	var rrp=new RRPublish(document.getElementById("divRRPublish"), 223331, "results");
+	rrp.ShowTimerLogo=true;
+	rrp.ShowInfoText=false;
+</script>
+<style>
+
+div.RRPublish {
+    width: 95%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+</style>
+    
+</body>
+</html>

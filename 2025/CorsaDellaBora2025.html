@@ -130,10 +130,16 @@
             >
               <strong>🗓️ Day 2:</strong> {{ result.Day2_Time }}
             </p>
-            <p class="text-blue-600 font-bold">
+            <p
+              v-if="result.OverallRank !== -1 && result.OverallRank !== ''"
+              class="text-blue-600 font-bold"
+            >
               <strong>📊 Pos. Overall:</strong> {{ result.OverallRank }}
             </p>
-            <p class="text-red-600 font-bold">
+            <p
+              v-if="result.GenderRank !== -1 && result.GenderRank !== ''"
+              class="text-red-600 font-bold"
+            >
               <strong>📊 Pos. Gender:</strong> {{ result.GenderRank }}
             </p>
             <p

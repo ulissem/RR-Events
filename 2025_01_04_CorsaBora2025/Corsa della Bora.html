@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corsa della Bora 2025</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const { createApp } = Vue;
+
+        createApp({
+          data() {
+            return {
+              bib: "",
+              result: null,
+              error: null,
+              showModal: false,
+              apiUrls: {
+                API: "https://api.raceresult.com/274193/JY53AF86HYBY9TFCJ9XSTKEW2F7NE2WU",
+              },
+            };
+          },
+          methods: {
+            async searchBib() {
+              this.error = null;
+              this.result = null;
+
+              if (!this.bib.trim()) {
+                this.error = "Enter your bib!";
+                return;
+              }
+
+              const url = `${this.apiUrls.API}?bib=${encodeURIComponent(
+                this.bib
+              )}`;
+
+              try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch data");
+
+                const data = await response.json();
+                if (!data || Object.keys(data).length === 0) {
+                  this.error = "No results found!";
+                  return;
+                }
+
+                this.result = data[0];
+                this.showModal = true;
+              } catch (err) {
+                this.error = `Error: ${err.message}`;
+              }
+            },
+            closeModal() {
+              this.showModal = false;
+            },
+          },
+        }).mount("#app");
+      });
+    </script>
+  </head>
+  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div
+      id="app"
+      class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center"
+    >
+      <h1 class="text-2xl font-bold text-gray-800 mb-6">
+        Corsa della Bora 2025
+      </h1>
+      <div class="space-y-4">
+        <input
+          v-model="bib"
+          class="input w-full"
+          placeholder="Enter Bib Number"
+        />
+        <!-- <select v-model="event" class="input w-full">
+                <option value="">Select Event</option>
+                <option value="marathon">Marathon</option>
+                <option value="semi_marathon">Semi-Marathon</option>
+            </select>
+            <select v-model="gender" class="input w-full">
+                <option value="">Select Gender</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+            </select> -->
+        <button @click="searchBib" class="btn w-full">Search</button>
+      </div>
+      <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
+
+      <div v-if="showModal" class="modal-overlay">
+        <div class="modal bg-white shadow-lg rounded-lg p-6 max-w-sm text-left">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">
+            Result of {{ result.Name }}
+          </h2>
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <p class="text-gray-700">
+              <strong>🏆 Contest:</strong> {{ result.Contest }}
+            </p>
+            <p class="text-gray-700">
+              <strong>🎽 Bib Number:</strong> {{ result.Bib }}
+            </p>
+            <p class="text-gray-700">
+              <strong>♂️/♀️ Gender:</strong> {{ result.Gender }}
+            </p>
+            <p class="text-gray-700">
+              <strong>📆 Year of Birth:</strong> {{ result.YoB }}
+            </p>
+            <p class="text-gray-700">
+              <strong>🌍 Nationality:</strong> {{ result.Nation }}
+            </p>
+            <p class="text-green-600 font-bold">
+              <strong>⏱ Time:</strong> {{ result.FinishTime }}
+            </p>
+            <p
+              v-if="result.Day1_Time !== -1 && result.Day1_Time !== ''"
+              class="text-green-600 font-bold ml-4"
+            >
+              <strong>🗓️ Day 1:</strong> {{ result.Day1_Time }}
+            </p>
+            <p
+              v-if="result.Day2_Time !== -1 && result.Day2_Time !== ''"
+              class="text-green-600 font-bold ml-4"
+            >
+              <strong>🗓️ Day 2:</strong> {{ result.Day2_Time }}
+            </p>
+            <p class="text-blue-600 font-bold">
+              <strong>📊 Pos. Overall:</strong> {{ result.OverallRank }}
+            </p>
+            <p class="text-red-600 font-bold">
+              <strong>📊 Pos. Gender:</strong> {{ result.GenderRank }}
+            </p>
+            <p
+              v-if="result.AgeGroupRank !== -1 && result.AgeGroupRank !== ''"
+              class="text-blue-600 font-bold"
+            >
+              <strong>📊 Pos. Category:</strong> {{ result.AgeGroupRank || "N/A"
+              }}
+            </p>
+          </div>
+          <button @click="closeModal" class="btn w-full mt-4">Close</button>
+        </div>
+      </div>
+    </div>
+    <style>
+      .input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .btn {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </body>
+</html>

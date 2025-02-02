@@ -101,6 +101,9 @@
                         v-model="bib" 
                         class="input w-full" 
                         placeholder="Enter Bib Number"
+                        type="number" 
+                        inputmode="numeric"
+                        pattern="[0-9]*"
                         @keyup.enter="searchBib" 
                       />
                       <button @click="searchBib" class="btn w-full">Search</button>

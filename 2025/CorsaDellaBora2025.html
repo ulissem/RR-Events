@@ -74,7 +74,7 @@
           <async-app />
         </template>
         <template #fallback>
-          <div class="spinner"></div>
+          <div v-if="loading" class="spinner"></div>
         </template>
       </Suspense>
     </div>
@@ -94,26 +94,30 @@
                     <h1 class="text-2xl font-bold text-gray-800 mb-6">
                       Corsa della Bora 2025
                     </h1>
-
+    
                     <!-- Input and Search Button -->
                     <div class="space-y-4">
                       <input 
                         v-model="bib" 
                         class="input w-full" 
                         placeholder="Enter Bib Number"
-                        type="number" 
+                        type="text" 
                         inputmode="numeric"
                         pattern="[0-9]*"
-                        @keyup.enter="searchBib" 
+                        @keyup.enter="searchBib"
+                        @focus="selectText" 
                       />
                       <button @click="searchBib" class="btn w-full">Search</button>
                     </div>
-
+    
                     <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
-
+    
+                    <!-- Spinner -->
+                    <div v-if="loading" class="spinner"></div>
+    
                     <!-- Modal with race results -->
                     <div v-if="showModal" class="modal-overlay">
-                      <div class="modal bg-white shadow-lg rounded-lg p-6 max-w-sm text-left">
+                      <div class="modal bg-white shadow-lg rounded-lg p-6 max-w-sm text-left mt-6">
                         <h2 class="text-xl font-bold text-gray-800 mb-4">
                           Result of {{ result.Name }}
                         </h2>
@@ -151,22 +155,39 @@
                       result: null,
                       error: null,
                       showModal: false,
+                      loading: false, // New loading state
                       apiUrl:
                         "https://api.raceresult.com/274193/JY53AF86HYBY9TFCJ9XSTKEW2F7NE2WU", // API Endpoint
                     };
                   },
                   methods: {
+                    selectText(event) {
+                      event.target.select();
+                    },
                     async searchBib() {
                       this.error = null;
                       this.result = null; // Clear previous result
                       this.showModal = false; // Hide modal before new search
+                      this.loading = true; // Show spinner
+                      this.applyBlur(true); // Apply blur to background
+
+                      // Simulate a minimum 0.5 seconds for the spinner to show
+                      setTimeout(() => {
+                        this.loading = false; // Hide spinner after 0.5 seconds
+                        this.applyBlur(false); // Remove blur effect
+                        this.getResults();
+                      }, 300);
 
                       // Ensure user entered a Bib Number
                       if (!this.bib.trim()) {
                         this.error = "Enter your bib!";
+                        this.loading = false; // Hide spinner if there's an error
+                        this.applyBlur(false); // Remove blur effect
                         return;
                       }
+                    },
 
+                    async getResults() {
                       const url = `${this.apiUrl}?bib=${encodeURIComponent(
                         this.bib
                       )}`;
@@ -190,6 +211,18 @@
                         this.error = `Error: ${err.message}`;
                       }
                     },
+
+                    applyBlur(state) {
+                      // Apply or remove blur on the body container only (not the spinner)
+                      const contentContainer =
+                        document.querySelector(".content-container");
+                      if (contentContainer) {
+                        contentContainer.style.filter = state
+                          ? "blur(5px)"
+                          : "none";
+                      }
+                    },
+
                     closeModal() {
                       this.showModal = false;
                     },

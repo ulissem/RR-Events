@@ -8,158 +8,39 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script defer>
-      document.addEventListener("DOMContentLoaded", () => {
-        const { createApp } = Vue;
 
-        createApp({
-          data() {
-            return {
-              bib: "",
-              result: null,
-              error: null,
-              showModal: false,
-              apiUrls: {
-                API: "https://api.raceresult.com/274193/JY53AF86HYBY9TFCJ9XSTKEW2F7NE2WU",
-              },
-            };
-          },
-          methods: {
-            async searchBib() {
-              this.error = null;
-              this.result = null;
-
-              if (!this.bib.trim()) {
-                this.error = "Enter your bib!";
-                return;
-              }
-
-              const url = `${this.apiUrls.API}?bib=${encodeURIComponent(
-                this.bib
-              )}`;
-
-              try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error("Failed to fetch data");
-
-                const data = await response.json();
-                if (!data || Object.keys(data).length === 0) {
-                  this.error = "No results found!";
-                  return;
-                }
-
-                this.result = data[0];
-                this.showModal = true;
-              } catch (err) {
-                this.error = `Error: ${err.message}`;
-              }
-            },
-            closeModal() {
-              this.showModal = false;
-            },
-          },
-        }).mount("#app");
-      });
-    </script>
-  </head>
-  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
-    <p id="HomePage"><a href="/">&lt; All Events</a></p>
-    <div
-      id="app"
-      class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center"
-      style="margin-left: 16px; margin-right: 16px"
-    >
-      <h1 class="text-2xl font-bold text-gray-800 mb-6">
-        Corsa della Bora 2025
-      </h1>
-      <div class="space-y-4">
-        <input
-          v-model="bib"
-          class="input w-full"
-          placeholder="Enter Bib Number"
-        />
-        <!-- <select v-model="event" class="input w-full">
-                <option value="">Select Event</option>
-                <option value="marathon">Marathon</option>
-                <option value="semi_marathon">Semi-Marathon</option>
-            </select>
-            <select v-model="gender" class="input w-full">
-                <option value="">Select Gender</option>
-                <option value="men">Men</option>
-                <option value="women">Women</option>
-            </select> -->
-        <button @click="searchBib" class="btn w-full">Search</button>
-      </div>
-      <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
-
-      <div v-if="showModal" class="modal-overlay">
-        <div class="modal bg-white shadow-lg rounded-lg p-6 max-w-sm text-left">
-          <h2 class="text-xl font-bold text-gray-800 mb-4">
-            Result of {{ result.Name }}
-          </h2>
-          <div class="bg-gray-100 p-4 rounded-lg shadow">
-            <p class="text-gray-700">
-              <strong>🏆 Contest:</strong> {{ result.Contest }}
-            </p>
-            <p class="text-gray-700">
-              <strong>🎽 Bib Number:</strong> {{ result.Bib }}
-            </p>
-            <p class="text-gray-700">
-              <strong>♂️/♀️ Gender:</strong> {{ result.Gender }}
-            </p>
-            <p class="text-gray-700">
-              <strong>📆 Year of Birth:</strong> {{ result.YoB }}
-            </p>
-            <p class="text-gray-700">
-              <strong>🌍 Nationality:</strong> {{ result.Nation }}
-            </p>
-            <p class="text-green-600 font-bold">
-              <strong>⏱ Time:</strong> {{ result.FinishTime }}
-            </p>
-            <p
-              v-if="result.Day1_Time !== -1 && result.Day1_Time !== ''"
-              class="text-green-600 font-bold ml-4"
-            >
-              <strong>🗓️ Day 1:</strong> {{ result.Day1_Time }}
-            </p>
-            <p
-              v-if="result.Day2_Time !== -1 && result.Day2_Time !== ''"
-              class="text-green-600 font-bold ml-4"
-            >
-              <strong>🗓️ Day 2:</strong> {{ result.Day2_Time }}
-            </p>
-            <p
-              v-if="result.OverallRank !== -1 && result.OverallRank !== ''"
-              class="text-blue-600 font-bold"
-            >
-              <strong>📊 Pos. Overall:</strong> {{ result.OverallRank }}
-            </p>
-            <p
-              v-if="result.GenderRank !== -1 && result.GenderRank !== ''"
-              class="text-red-600 font-bold"
-            >
-              <strong>📊 Pos. Gender:</strong> {{ result.GenderRank }}
-            </p>
-            <p
-              v-if="result.AgeGroupRank !== -1 && result.AgeGroupRank !== ''"
-              class="text-blue-600 font-bold"
-            >
-              <strong>📊 Pos. Category:</strong> {{ result.AgeGroupRank || "N/A"
-              }}
-            </p>
-          </div>
-          <button @click="closeModal" class="btn w-full mt-4">Close</button>
-        </div>
-      </div>
-    </div>
     <style>
+      /* Loading Spinner */
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #ccc;
+        border-top-color: #333;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes spin {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      /* Basic input and button styles */
       .input {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
       }
+
       .btn {
         padding: 10px;
         background-color: #007bff;
@@ -168,10 +49,12 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
       .btn:hover {
         background-color: #0056b3;
       }
 
+      /* Home link position */
       #HomePage {
         color: #ffffff;
         font-weight: 700;
@@ -180,5 +63,144 @@
         left: 20px;
       }
     </style>
+  </head>
+  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <p id="HomePage"><a href="/">&lt; All Events</a></p>
+
+    <!-- Vue App Root -->
+    <div id="app">
+      <Suspense>
+        <template #default>
+          <async-app />
+        </template>
+        <template #fallback>
+          <div class="spinner"></div>
+        </template>
+      </Suspense>
+    </div>
+
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const { createApp, defineAsyncComponent } = Vue;
+
+        // Define an async component (BibSearchApp)
+        const BibSearchApp = defineAsyncComponent(
+          () =>
+            new Promise((resolve) => {
+              setTimeout(() => {
+                resolve({
+                  template: `
+                  <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center">
+                    <h1 class="text-2xl font-bold text-gray-800 mb-6">
+                      Corsa della Bora 2025
+                    </h1>
+
+                    <!-- Input and Search Button -->
+                    <div class="space-y-4">
+                      <input 
+                        v-model="bib" 
+                        class="input w-full" 
+                        placeholder="Enter Bib Number"
+                        @keyup.enter="searchBib" 
+                      />
+                      <button @click="searchBib" class="btn w-full">Search</button>
+                    </div>
+
+                    <p v-if="error" class="text-red-500 mt-2">{{ error }}</p>
+
+                    <!-- Modal with race results -->
+                    <div v-if="showModal" class="modal-overlay">
+                      <div class="modal bg-white shadow-lg rounded-lg p-6 max-w-sm text-left">
+                        <h2 class="text-xl font-bold text-gray-800 mb-4">
+                          Result of {{ result.Name }}
+                        </h2>
+                        <div class="bg-gray-100 p-4 rounded-lg shadow">
+                          <p class="text-gray-700"><strong>🏆 Contest:</strong> {{ result.Contest }}</p>
+                          <p class="text-gray-700"><strong>🎽 Bib Number:</strong> {{ result.Bib }}</p>
+                          <p class="text-gray-700"><strong>♂️/♀️ Gender:</strong> {{ result.Gender }}</p>
+                          <p class="text-gray-700"><strong>📆 Year of Birth:</strong> {{ result.YoB }}</p>
+                          <p class="text-gray-700"><strong>🌍 Nationality:</strong> {{ result.Nation }}</p>
+                          <p class="text-green-600 font-bold"><strong>⏱ Time:</strong> {{ result.FinishTime }}</p>
+                          <p v-if="result.Day1_Time !== -1 && result.Day1_Time !== ''" class="text-green-600 font-bold ml-4">
+                            <strong>🗓️ Day 1:</strong> {{ result.Day1_Time }}
+                          </p>
+                          <p v-if="result.Day2_Time !== -1 && result.Day2_Time !== ''" class="text-green-600 font-bold ml-4">
+                            <strong>🗓️ Day 2:</strong> {{ result.Day2_Time }}
+                          </p>
+                          <p v-if="result.OverallRank !== -1 && result.OverallRank !== ''" class="text-blue-600 font-bold">
+                            <strong>📊 Pos. Overall:</strong> {{ result.OverallRank }}
+                          </p>
+                          <p v-if="result.GenderRank !== -1 && result.GenderRank !== ''" class="text-red-600 font-bold">
+                            <strong>📊 Pos. Gender:</strong> {{ result.GenderRank }}
+                          </p>
+                          <p v-if="result.AgeGroupRank !== -1 && result.AgeGroupRank !== ''" class="text-blue-600 font-bold">
+                            <strong>📊 Pos. Category:</strong> {{ result.AgeGroupRank || "N/A" }}
+                          </p>
+                        </div>
+                        <button @click="closeModal" class="btn w-full mt-4">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                `,
+                  data() {
+                    return {
+                      bib: "",
+                      result: null,
+                      error: null,
+                      showModal: false,
+                      apiUrl:
+                        "https://api.raceresult.com/274193/JY53AF86HYBY9TFCJ9XSTKEW2F7NE2WU", // API Endpoint
+                    };
+                  },
+                  methods: {
+                    async searchBib() {
+                      this.error = null;
+                      this.result = null; // Clear previous result
+                      this.showModal = false; // Hide modal before new search
+
+                      // Ensure user entered a Bib Number
+                      if (!this.bib.trim()) {
+                        this.error = "Enter your bib!";
+                        return;
+                      }
+
+                      const url = `${this.apiUrl}?bib=${encodeURIComponent(
+                        this.bib
+                      )}`;
+
+                      try {
+                        const response = await fetch(url);
+                        if (!response.ok)
+                          throw new Error("Failed to fetch data");
+
+                        const data = await response.json();
+
+                        // Ensure data is valid
+                        if (!data || Object.keys(data).length === 0) {
+                          this.error = "No results found!";
+                          return;
+                        }
+
+                        this.result = data[0];
+                        this.showModal = true;
+                      } catch (err) {
+                        this.error = `Error: ${err.message}`;
+                      }
+                    },
+                    closeModal() {
+                      this.showModal = false;
+                    },
+                  },
+                });
+              }, 500); // Simulate a delay for smooth UX
+            })
+        );
+
+        // Create and mount Vue app with the async component
+        createApp({
+          components: { "async-app": BibSearchApp },
+        }).mount("#app");
+      });
+    </script>
   </body>
 </html>
